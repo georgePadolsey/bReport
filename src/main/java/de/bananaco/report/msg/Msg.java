@@ -33,10 +33,6 @@ public enum Msg {
     COMMENT("&7Showing&b %s &7comments on Report&b %s"),
     NO_COMMENTS("&4No comments found"),
     REPORT_TELEPORT("&7Teleported to the location of the report - ID:&b %s");
-    
-
-    private Msg() {
-    }
 
     private String message;
 
