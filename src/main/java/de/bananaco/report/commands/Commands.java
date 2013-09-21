@@ -38,8 +38,8 @@ public class Commands extends JavaPlugin {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        // Get the command name
-        String cname = command.getName().toLowerCase(Locale.getDefault());
+        // Get the command name usuing the label
+        String cname = label.toLowerCase(Locale.getDefault());
         // Permission check for players
         if (sender instanceof Player) {
             if (!sender.hasPermission("breport." + cname)) {
